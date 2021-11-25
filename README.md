@@ -24,5 +24,5 @@
 | Coverage | 4 | 0 | 5 | 9 | 6 | 6 | 21 | 0 | 8 | 
 
 | Algo4 | Memoization | RollingHash | ShortestPath | Randomized | Combanatorics | Concurrency | NumberTheory | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
 | Coverage | 11 | 0 | 8 | 0 | 10 | 0 | 12 | 
