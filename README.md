@@ -26,3 +26,11 @@
 | Algo4 | Memoization | RollingHash | ShortestPath | Randomized | Combanatorics | Concurrency | NumberTheory | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
 | Coverage | 11 | 0 | 8 | 0 | 10 | 0 | 12 | 
+
+| Algo5 | MergeSort | BrainTeaser | Probability | QuickSelect | BucketSort | CountingSort |
+| :---: | :---: | :---: | :---: | :---: | :---: | :--: |
+| Coverage | 37 | 0 | 0 | 83 | 66 | 20 |
+
+| Algo6 | StronglyConnectdComponents | RadixSort | ReflectionSampling | ReservoirSampling | EulerianCircuit | 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
+| Coverage | 0 | 20 | 0 | 0 | 0 |
