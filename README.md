@@ -11,14 +11,14 @@
 | :---: | :---: | :---: |  :---: | :--: | :--: | :--:| :--: | :--: |
 | Coverage | 10 | 0 | 0 | 14 | 0 | 0 | 0 | 1 |
 
-| Algo1 | DP | Math | DFS | Sorting | Greedy | BFS | BinarySearch | TwoPointer | Design |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| Coverage | 5 | 3 | 19 | 15 | 5 | 17 | 7 | 14 | 32 |
+| Algo1 | DP | Math | DFS | Sorting | Greedy | BFS | BinarySearch | TwoPointer | Design | TopologicalSort |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  :---: | 
+| Coverage | 5 | 3 | 19 | 15 | 5 | 17 | 7 | 14 | 32 |  5 |
 
-| Algo2 | Backttracking | PrefixSum | SlidingWindow | Simulation | Counting | Recursion | DivideAndConquer | Memoization | TopologicalSort |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| Coverage | 7 | 6 | 14 | 4 | 14 | 9 | 35 | 11 | 5 |
+| Algo2 | Backttracking | PrefixSum | SlidingWindow | Simulation | Counting | Recursion | DivideAndConquer | Memoization | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Coverage | 7 | 6 | 14 | 4 | 14 | 9 | 35 | 11 |
 
-| Algo3 | DP | Math | DFS | Sorting | Greedy | BFS | BinarySearch | TwoPointer | Design |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| Coverage | 4 | 0 | 5 | 9 | 6 | 6 | 21 | 0 | 8 |
+| Algo3 | Geometry | GameTheory | Enumeration | HashFunction | Interactive | StringMatching | DataStream | RollingHash | ShortestPath | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |  
+| Coverage | 4 | 0 | 5 | 9 | 6 | 6 | 21 | 0 | 8 | 
