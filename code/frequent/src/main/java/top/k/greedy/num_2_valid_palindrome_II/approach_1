@@ -1,0 +1,9 @@
+Two Pointer.
+
+Have a start and end index. Compare the elements. 
+If not equal, check skipping ith character once and continue, or skipping the jth character and continue. 
+For each next check, if not equal, return false. Else return true.
+
+COMPLEXITY:
+Time: O(n)
+Space: O(1)
