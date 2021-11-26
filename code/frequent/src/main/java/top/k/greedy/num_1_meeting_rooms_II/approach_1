@@ -1,0 +1,30 @@
+- Process the meetings in increasing order of their start time. 
+- Maintain a min priority queue of rooms sorted by end time to check if any room is free or not. 
+- The size of the heap will tell the number of rooms allocated.
+
+Time Complexity:
+Time: O(nlogn) 
+Sorting O(nlogn)
+Also in worst case all n meetings will collide. In that case n adds and n extract-mins. O(nlogn)
+Space :O(n) 
+
+Dry Run:
+[[0,30],[5,10],[15,20]]
+Add room 30
+Add room 10
+Allocated 15,20 to room 10
+End.
+Heap size = 2
+
+[[1,10],[2,7],[3,19],[8,12],[10,20],[11,30]]
+Add room 1,10
+Add room 2,7
+Add room 3,19
+Replace room 2,7 with 8,12
+Replace room 1,10 with 10,20
+Add room 11,30
+Heap size = [3,19],[8,12],[10,20],[11,30] = 4
+
+
+
+Pseudo Code:
