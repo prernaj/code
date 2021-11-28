@@ -1,7 +1,7 @@
 # code
-| DS1 | Array | String | HashTable | Tree | BinaryTree | Matrix | Stack | Heap | Graph |
+| DS1 | Array | String | HashTable | Tree | BinaryTree | Matrix | Stack | Heap | ** Graph ** |
 | :---: | :---: | :---: |  :---: | :--: | :--: | :--:| :--: | :--: | :--: |
-| Coverage | 10 | 8 | 14 | 21 | 22 | 8 | 23 | 23 | 9 |
+| Coverage | 10 | 8 | 14 | 21 | 22 | 8 | 23 | 23 | ** 19 ** |
 
 | DS2 | LinkedList | UnionFind | BST | MonotonicStack | OrderedSet | Queue | SegmentTree | BinaryIndexTree | 
 | :---: | :---: | :---: |  :---: | :--: | :--: | :--:| :--: | :--: | 
