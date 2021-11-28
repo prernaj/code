@@ -113,22 +113,24 @@ public class Q1_PartitionEqualSubsetSum {
     }
 
     public Boolean canPartitionDP(int[] nums) {
+        int totalSum = 0;
+        // find sum of all array elements
+        for (int num : nums) {
+            totalSum += num;
+        }
+        // if totalSum is odd, it cannot be partitioned into equal sum subset
+        if (totalSum % 2 != 0) return false;
+        int subSetSum = totalSum / 2;
         int n = nums.length;
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += nums[i];
-        }
-        if (sum % 2 != 0) {
-            return false;
-        }
-        int subSetSum = sum/2;
-        Boolean[][] dp = new Boolean[n+1][subSetSum+1];
-        dp[0][0] = Boolean.TRUE;
-
+        boolean dp[][] = new boolean[n + 1][subSetSum + 1];
+        dp[0][0] = true;
         for (int i = 1; i <= n; i++) {
-            int curr = nums[i-1];
+            int curr = nums[i - 1];
             for (int j = 0; j <= subSetSum; j++) {
-                dp[i][j] = dp[i-1][j] || dp[i-1][j-curr];
+                if (j < curr)
+                    dp[i][j] = dp[i - 1][j];
+                else
+                    dp[i][j] = dp[i - 1][j] || (dp[i - 1][j - curr]);
             }
         }
         return dp[n][subSetSum];
