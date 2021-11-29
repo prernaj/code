@@ -18,7 +18,7 @@ package top.k.array;
    * But this could be stored.
    * 1. find max height upto the given point from left end.
    * 2. find max height upto the given point from right end.
-   * 3. add ming(left_max[i], right_max[i])-height[i] to answer
+   * 3. add min(left_max[i], right_max[i])-height[i] to answer
    */
 public class Q3_TrappingRainWater {
     public int getTrappingRainWater(int[] height) {

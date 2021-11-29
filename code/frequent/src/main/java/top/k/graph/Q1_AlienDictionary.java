@@ -13,6 +13,32 @@ package top.k.graph;
  * If the first min(s.length, t.length) letters are the same, then s is smaller if and only if s.length < t.length.
  */
 
+/**
+ * Input Output
+ * words = ["wrt","wrf","er","ett","rftt"]
+ * w < r < t
+ * w < r < f
+ * e < r
+ * e < t < t
+ * r < f < t < t
+ * 
+ * w < e < r < f < t
+ * e < w < r < f < t
+ * 
+ * ["z","x"]
+ * "zx"
+ * 
+ * words = ["z","x","z"]
+ * ""
+ */
+
+/**
+ * Thought process
+ * - extracting dependency rules from the input.
+ * - putting the dependency rules into a graph with letters as nodes and dependency as edges.
+ * - topologically sorting the graph nodes.
+ */
+
 public class Q1_AlienDictionary {
     
 }
