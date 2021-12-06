@@ -1,5 +1,7 @@
 package crash.course;
 
+import java.util.Stack;
+
 /**
  * https://leetcode.com/problems/k-th-symbol-in-grammar/
  * Question

@@ -1,7 +1,6 @@
 package crash.course;
 
 import java.util.LinkedList;
-import javafx.util.Pair;
 
 /**
  * https://leetcode.com/problems/minimum-depth-of-binary-tree/
@@ -48,7 +47,7 @@ public class Q22_MinimumDepthOfBinaryTree {
     }
 
     public int minDepthDFSIterative(TreeNode root) {
-        LinkedList<Pair<TreeNode, Integer>> stack = new LinkedList<>();
+        LinkedList<Pair> stack = new LinkedList<>();
         if (root == null) {
           return 0;
         }
@@ -58,7 +57,7 @@ public class Q22_MinimumDepthOfBinaryTree {
     
         int min_depth = Integer.MAX_VALUE;
         while (!stack.isEmpty()) {
-          Pair<TreeNode, Integer> current = stack.pollLast();
+          Pair current = stack.pollLast();
           root = current.getKey();
           int current_depth = current.getValue();
           if ((root.left == null) && (root.right == null)) {
@@ -75,11 +74,17 @@ public class Q22_MinimumDepthOfBinaryTree {
     }
 
     class Pair {
-        int key;
+        TreeNode key;
         int value;
-        public Pair(int key, int value) {
+        public Pair(TreeNode key, int value) {
             this.key = key;
             this.value = value;
+        }
+        public TreeNode getKey() {
+          return this.key;
+        }
+        public int getValue() {
+          return this.value;
         }
     }
 }
