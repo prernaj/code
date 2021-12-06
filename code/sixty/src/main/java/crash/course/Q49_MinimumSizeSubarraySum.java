@@ -15,6 +15,23 @@ package crash.course;
  * target = 11, nums = [1,1,1,1,1,1,1,1] => 0
  */
 /**
+ * Thought process
+ * sliding window.
+ * keep left to 0 and right to 1.
+ * if sum < target, move right
+ * if sum >= target, move left
+ * keep track of max sum.
+ * Time: O(n)
+ * Space: O(1)
+ */
+/**
+ * Improvements
+ * brute force.
+ * find the sum of all possible subarrays and update the answer as and when we get a better subarray that fulfills the requirement.
+ * Time: O(n^3)
+ * Space: O(1)
+ * 
+ * better brute force.
  * 
  */
 public class Q49_MinimumSizeSubarraySum {

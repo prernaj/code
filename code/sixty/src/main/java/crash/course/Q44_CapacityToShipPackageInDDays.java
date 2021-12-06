@@ -65,7 +65,7 @@ public class Q44_CapacityToShipPackageInDDays {
                     need += 1;
                     cur = 0;
                 }
-                cur += w;
+                cur += w;   
             }
             if (need > days) left = mid + 1;
             else right = mid;
