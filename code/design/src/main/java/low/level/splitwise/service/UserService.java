@@ -33,6 +33,23 @@ public class UserService {
             throw new ContributionExceededException(String.format("User %s contriution %d exceeded the share %d", emailId, contribution.getContributionValue(), userShare.getShare()));
         }
         userShare.getContributions().add(contribution);
+    }
 
+    public void contributeToExpense(String expenseId, String emailId, String toEmailId, Contribution contribution) throws InvalidExpenseException, ExpenseSettledException, ContributionExceededException {
+        Expense expense = ExpenseRepository.expenseMap.get(expenseId);
+        ExpenseGroup expenseGroup = expense.getExpenseGroup();
+        if (expense.getExpenseStatus() == ExpenseStatus.CREATED) {
+            throw new InvalidExpenseException("Invalid expense State");
+        }
+        if (expense.getExpenseStatus() == ExpenseStatus.SETTLED) {
+            throw new ExpenseSettledException("Expense is already settled.");
+        }
+        UserShare userShare = expenseGroup.getUserContributions().get(emailId);
+        if (contribution.getContributionValue() > userShare.getShare()) {
+            throw new ContributionExceededException(
+                    String.format("User %s contribution %d exceeded the share %d",
+                            emailId, contribution.getContributionValue(), userShare.getShare()));
+        }
+        userShare.getContributions().add(contribution);
     }
 }
