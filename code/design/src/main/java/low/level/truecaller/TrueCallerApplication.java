@@ -11,6 +11,7 @@ import low.level.truecaller.model.User;
 import low.level.truecaller.model.UserCategory;
 import low.level.truecaller.model.common.Contact;
 import low.level.truecaller.model.common.GlobalSpam;
+import low.level.truecaller.model.common.Tag;
 
 public class TrueCallerApplication {
     public static void main(String[] args) throws ContactsExceededException, BlockLimitExceededException {

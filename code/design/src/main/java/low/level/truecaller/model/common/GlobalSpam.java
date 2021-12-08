@@ -14,7 +14,7 @@ import java.nio.charset.Charset;
 public class GlobalSpam {
     private BloomFilter<String> globalBlocked = BloomFilter.create(Funnels.stringFunnel(Charset.forName("UTF-8")), MAX_GLOBAL_SPAM_COUNT);
 
-    private CountingBloomFilter<String> globalSpam = new FilterBuilder(MAX_FLOBAL_SPAM_COUNT, 0.01).buildCountingBloomFilter();
+    private CountingBloomFilter<String> globalSpam = new FilterBuilder(MAX_GLOBAL_SPAM_COUNT, 0.01).buildCountingBloomFilter();
 
     private GlobalSpam() {
     }
